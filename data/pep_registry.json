@@ -1,0 +1,56 @@
+{
+  "source": "Mock PEP Registry (Portfolio Dataset)",
+  "last_updated": "2024-01-15",
+  "persons": [
+    {
+      "id": "PEP-001",
+      "name": "MARIA GONZALEZ",
+      "country": "MX",
+      "position": "Former Minister of Finance",
+      "status": "active",
+      "risk_level": "HIGH",
+      "family_members": ["CARLOS GONZALEZ"],
+      "close_associates": ["JUAN PEREZ"]
+    },
+    {
+      "id": "PEP-002",
+      "name": "DMITRI VOLKOV",
+      "country": "RU",
+      "position": "State Oil Company Executive",
+      "status": "active",
+      "risk_level": "HIGH",
+      "family_members": [],
+      "close_associates": []
+    },
+    {
+      "id": "PEP-003",
+      "name": "FATIMA AL-HASSAN",
+      "country": "AE",
+      "position": "Central Bank Board Member",
+      "status": "active",
+      "risk_level": "MEDIUM",
+      "family_members": ["OMAR AL-HASSAN"],
+      "close_associates": []
+    },
+    {
+      "id": "PEP-004",
+      "name": "ROBERT CHEN",
+      "country": "SG",
+      "position": "Former Trade Commissioner",
+      "status": "inactive",
+      "risk_level": "LOW",
+      "family_members": [],
+      "close_associates": []
+    },
+    {
+      "id": "PEP-005",
+      "name": "ELENA POPESCU",
+      "country": "RO",
+      "position": "Parliament Member",
+      "status": "active",
+      "risk_level": "MEDIUM",
+      "family_members": ["ANDREI POPESCU"],
+      "close_associates": ["MICHAEL IONESCU"]
+    }
+  ]
+}
