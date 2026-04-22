@@ -1,0 +1,22 @@
+# Core LLM & Agent Framework
+anthropic>=0.40.0
+mcp>=1.0.0              # Model Context Protocol SDK
+python-dotenv>=1.0.0    # Environment variable management
+
+# Data & Validation
+pydantic>=2.5.0         # Data validation & settings management
+pandas>=2.0.0           # Transaction data handling
+jsonschema>=4.0.0       # Validating agent output structure
+
+# Reporting & Logging
+reportlab>=4.0.0        # PDF Audit Report generation
+python-json-logger>=2.0.0 # Structured logging for audit trails
+requests>=2.31.0        # API interactions (Sanctions/PEP)
+
+# Evaluation & Testing
+pytest>=7.4.0           # Testing framework
+pytest-asyncio>=0.21.0  # Async test support
+faker>=20.0.0           # Synthetic data generation for evals
+
+# Security
+cryptography>=41.0.0    # Encryption for sensitive logs
