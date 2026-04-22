@@ -202,7 +202,7 @@ Output ──► Compliance dashboard · SIEM · Case management system
 
 ## 🗺️ Roadmap
 
-- [ ] Real-time streaming transaction monitoring
+- [X] Real-time streaming transaction monitoring
 - [ ] Integration with SWIFT transaction messaging
 - [ ] Automated SAR (Suspicious Activity Report) filing draft generation
 - [ ] Fine-tuned risk scoring model on institution-specific historical data
