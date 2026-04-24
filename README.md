@@ -1,8 +1,18 @@
 # 🏦 AML/KYC Compliance AI Agent
 
-> An automated audit and reporting agent for Anti-Money Laundering (AML) and Know Your Customer (KYC) compliance, built using the [VSCode Foundry Toolkit](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio) and powered by **Claude Sonnet** via the Anthropic API.
 
----
+This agent is specifically calibrated for the **Caribbean financial landscape**, addressing unique regional challenges:
+
+- **De-risking Mitigation:** Helps local banks maintain correspondent relationships by ensuring robust compliance.
+- **CFATF Alignment:** Risk scoring aligns with Caribbean Financial Action Task Force mutual evaluation recommendations.
+- **POCA Compliance:** Adheres to Jamaica's Proceeds of Crime Act for PEP identification and reporting.
+- **CBI Scrutiny:** Enhanced due diligence for Citizenship by Investment applicants.
+
+### Regulatory Bodies Supported
+- **Bank of Jamaica (BOJ)**
+- **Financial Services Commission (FSC)**
+- **Financial Investigation Division (FID)**
+- **CARICOM Implementation Agency for Crime and Security (IMPACS)**
 
 ## 📌 Overview
 

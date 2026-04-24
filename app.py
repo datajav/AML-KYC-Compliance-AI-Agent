@@ -97,7 +97,7 @@ with tab1:
         transaction_amount = st.number_input("Amount (USD)", min_value=0, value=10000)
         transaction_country = st.selectbox(
             "Country",
-            ["US", "GB", "RU", "CN", "MX", "AE", "KP", "SY"]
+            ["JM", "US", "GB", "CA", "TT", "BB", "KY", "BS", "HT", "CU"]
         )
         transaction_date = st.date_input("Date", datetime.now())
         
@@ -111,11 +111,11 @@ with tab1:
                 # Mock response for portfolio (replace with actual agent call)
                 mock_result = {
                     "entity_id": "TXN-2024-001",
-                    "risk_score": 0.85 if transaction_country in ["RU", "KP", "SY"] else 0.25,
-                    "risk_level": "HIGH" if transaction_country in ["RU", "KP", "SY"] else "LOW",
-                    "flags": ["High-risk jurisdiction", "Large transaction"] if transaction_country in ["RU", "KP", "SY"] else [],
+                    "risk_score": 0.85 if transaction_country in ["CU", "HT", "BS"] else 0.25,
+                    "risk_level": "HIGH" if transaction_country in ["CU", "HT", "BS"] else "LOW",
+                    "flags": ["High-risk jurisdiction", "Large transaction"] if transaction_country in ["CU", "HT", "BS"] else [],
                     "sanctions_match": transaction_name.upper() in ["IVAN PETROV", "KIM JONG-SIK"],
-                    "recommendation": "REVIEW" if transaction_country in ["RU", "KP", "SY"] else "APPROVE"
+                    "recommendation": "REVIEW" if transaction_country in ["CU", "HT", "BS"] else "APPROVE"
                 }
                 
                 # Display risk level
@@ -224,12 +224,16 @@ with tab3:
     
     st.subheader("Transactions by Country")
     country_data = {
-        "US": 500,
-        "GB": 300,
-        "CA": 200,
-        "MX": 150,
-        "RU": 50,
-        "Other": 47
+        "JM": 500,
+        "US": 300,
+        "GB": 200,
+        "CA": 150,
+        "TT": 50,
+        "BB": 47,
+        "KY": 47,
+        "BS": 47,
+        "HT": 47, 
+        "CU": 47
     }
     st.bar_chart(country_data)
 
