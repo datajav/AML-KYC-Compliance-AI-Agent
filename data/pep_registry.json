@@ -1,56 +1,35 @@
 {
-  "source": "Mock PEP Registry (Portfolio Dataset)",
-  "last_updated": "2024-01-15",
+  "source": "Jamaica FSC & CFATF (Mock Dataset)",
   "persons": [
     {
-      "id": "PEP-001",
-      "name": "MARIA GONZALEZ",
-      "country": "MX",
-      "position": "Former Minister of Finance",
+      "id": "JM-PEP-001",
+      "name": "HON. MICHAEL BROWN",
+      "country": "JM",
+      "position": "Former Member of Parliament",
       "status": "active",
       "risk_level": "HIGH",
-      "family_members": ["CARLOS GONZALEZ"],
-      "close_associates": ["JUAN PEREZ"]
+      "family_members": ["SARAH BROWN"],
+      "close_associates": ["JAMAICA DEVELOPMENT CORP"]
     },
     {
-      "id": "PEP-002",
-      "name": "DMITRI VOLKOV",
-      "country": "RU",
-      "position": "State Oil Company Executive",
+      "id": "JM-PEP-002",
+      "name": "DR. LISA CHEN",
+      "country": "JM",
+      "position": "Board Member, State-Owned Enterprise",
       "status": "active",
-      "risk_level": "HIGH",
+      "risk_level": "MEDIUM",
       "family_members": [],
       "close_associates": []
     },
     {
-      "id": "PEP-003",
-      "name": "FATIMA AL-HASSAN",
-      "country": "AE",
-      "position": "Central Bank Board Member",
+      "id": "CFATF-PEP-003",
+      "name": "AMBASSADOR JOHN SMITH",
+      "country": "BB",
+      "position": "High Commissioner",
       "status": "active",
       "risk_level": "MEDIUM",
-      "family_members": ["OMAR AL-HASSAN"],
-      "close_associates": []
-    },
-    {
-      "id": "PEP-004",
-      "name": "ROBERT CHEN",
-      "country": "SG",
-      "position": "Former Trade Commissioner",
-      "status": "inactive",
-      "risk_level": "LOW",
       "family_members": [],
       "close_associates": []
-    },
-    {
-      "id": "PEP-005",
-      "name": "ELENA POPESCU",
-      "country": "RO",
-      "position": "Parliament Member",
-      "status": "active",
-      "risk_level": "MEDIUM",
-      "family_members": ["ANDREI POPESCU"],
-      "close_associates": ["MICHAEL IONESCU"]
     }
   ]
 }

@@ -43,10 +43,10 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Title and header
-st.title("🏦 AML/KYC Compliance Agent")
+st.title("🏦 Caribbean AML/KYC Compliance Agent")
 st.markdown("""
-**AI-Powered Transaction Screening & KYC Verification**  
-*Built with Claude Sonnet · Microsoft Foundry · Model Context Protocol*
+**AI-Powered Screening for Jamaican Financial Institutions**  
+*Aligned with BOJ, FSC, and CFATF Guidelines*
 """)
 
 # Sidebar configuration
@@ -74,7 +74,7 @@ with st.sidebar:
     st.metric("API Calls", "0")
     
     st.markdown("---")
-    st.info("**Portfolio Demo Mode**\n\nThis uses mock data for demonstration. No real PII is processed.")
+    st.info("**Regional Focus:** Jamaica & CARICOM\n\nOptimized for local DFIs and Remittance Providers.")
 
 # Main content tabs
 tab1, tab2, tab3, tab4 = st.tabs([

@@ -1,51 +1,32 @@
 {
-  "source": "OpenSanctions (Mock Dataset for Portfolio)",
-  "last_updated": "2024-10-29",
+  "source": "Bank of Jamaica & UN Sanctions (Mock Dataset)",
   "entities": [
     {
-      "id": "SANCTION-001",
-      "name": "Anthony Taylor",
-      "type": "individual",
-      "country": "USA",
-      "program": "OFAC-SDN",
-      "reason": "Sanctions evasion",
-      "date_added": "2022-03-15"
-    },
-    {
-      "id": "SANCTION-002",
-      "name": "DARKNET TRADING LLC",
+      "id": "BOJ-SANCTION-001",
+      "name": "KINGSTON SHELL TRADING LTD",
       "type": "organization",
-      "country": "VEN",
-      "program": "OFAC-SDN",
-      "reason": "Money laundering",
-      "date_added": "2021-08-20"
+      "country": "JM",
+      "program": "BOJ-Targeted-Financial-Sanctions",
+      "reason": "Money laundering via import/export",
+      "date_added": "2023-05-10"
     },
     {
-      "id": "SANCTION-003",
-      "name": "Saara Kuismanen",
-      "type": "individual",
-      "country": "FIN",
-      "program": "UN-Sanctions",
-      "reason": "Terrorism financing",
-      "date_added": "2020-11-10"
-    },
-    {
-      "id": "SANCTION-004",
-      "name": "GLOBAL SHELL CORP",
+      "id": "UN-SANCTION-002",
+      "name": "CARIBBEAN ARMS NETWORK",
       "type": "organization",
-      "country": "BZ",
-      "program": "EU-Sanctions",
-      "reason": "Sanctions evasion",
-      "date_added": "2023-02-28"
-    },
-    {
-      "id": "SANCTION-005",
-      "name": "KIM JONG-SIK",
-      "type": "individual",
-      "country": "KP",
-      "program": "OFAC-SDN",
+      "country": "TT",
+      "program": "UN-Sanctions-Committee",
       "reason": "Weapons proliferation",
-      "date_added": "2019-06-15"
+      "date_added": "2022-11-15"
+    },
+    {
+      "id": "OFAC-NEXUS-003",
+      "name": "ISLAND OFFSHORE HOLDINGS",
+      "type": "organization",
+      "country": "KY",
+      "program": "OFAC-SDN",
+      "reason": "Narcotics trafficking (US Nexus)",
+      "date_added": "2021-08-20"
     }
   ]
 }
