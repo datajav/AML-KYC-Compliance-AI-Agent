@@ -37,77 +37,57 @@ This project is an **agentic AI system** designed to assist compliance officers 
 
 ## 🏗️ Architecture
 
+```mermaid
+flowchart TD
+    A[🖥️ Streamlit UI<br/>app.py] --> B[🤖 Compliance Orchestrator<br/>Claude 3.5 Sonnet]
+    B --> C[🔍 Sanctions Checker<br/>BOJ · UN · OFAC]
+    B --> D[📊 Risk Scorer<br/>CFATF Logic]
+    C --> E[💾 Cache Layer]
+    D --> E
+    E --> F[📄 Audit Report<br/>JSON/PDF]
+    
+    style A fill:#1f77b4,stroke:#333,stroke-width:2px,color:#fff
+    style B fill:#ff7f0e,stroke:#333,stroke-width:2px,color:#fff
+    style C fill:#2ca02c,stroke:#333,stroke-width:2px,color:#fff
+    style D fill:#2ca02c,stroke:#333,stroke-width:2px,color:#fff
+    style E fill:#9467bd,stroke:#333,stroke-width:2px,color:#fff
+    style F fill:#1f77b4,stroke:#333,stroke-width:2px,color:#fff
+
 ```
-┌─────────────────────────────────────────────────┐
-│              Audit Orchestrator Agent            │
-│         (aggregates sub-agent outputs)          │
-└────────────┬──────────────────┬─────────────────┘
-             │                  │
-     ┌───────▼──────┐   ┌───────▼───────┐
-     │  Screening   │   │  KYC Verifier │
-     │    Agent     │   │     Agent     │
-     │              │   │               │
-     │ Transactions │   │ ID · UBO ·    │
-     │ + Watchlists │   │ Risk Profile  │
-     └──────────────┘   └───────────────┘
-             │                  │
-     ┌───────▼──────────────────▼───────┐
-     │         MCP Tool Layer           │
-     │  Filesystem · DB · REST APIs     │
-     │  Sanctions Lists · PEP Registry  │
-     └──────────────────────────────────┘
-```
-
----
-
-## ✨ Features
-
-- **Automated transaction screening** against sanctions lists and watchlists
-- **KYC document analysis** — ID verification, Ultimate Beneficial Owner (UBO) mapping, and risk profile assembly
-- **Risk scoring engine** — classifies entities and transactions by AML risk level
-- **Structured audit reports** — outputs timestamped, signed PDF/JSON reports per entity or transaction batch
-- **Decision audit trail** — full runtime tracing of agent reasoning for regulatory defensibility
-- **Multi-agent orchestration** — specialised sub-agents coordinated by a central orchestrator
-- **One-click cloud deployment** via Microsoft Foundry
 
 ---
 
 ## 🧰 Tech Stack
 
-| Layer | Technology |
-|---|---|
-| IDE & Agent Builder | [VSCode Foundry Toolkit](https://code.visualstudio.com/docs/intelligentapps/overview) |
-| LLM | Claude Sonnet (`claude-sonnet-4-6`) via Anthropic API |
-| Agent Framework | Microsoft Agent Framework SDK (Python) |
-| Tool Integration | Model Context Protocol (MCP) servers |
-| Cloud Deployment | Microsoft Foundry |
-| Language | Python 3.11+ |
-| Report Output | PDF · JSON |
+| Category | Technology |
+|----------|------------|
+| **Language** | Python 3.11+ |
+| **LLM** | Anthropic Claude 3.5 Sonnet |
+| **UI Framework** | Streamlit |
+| **API Management** | python-dotenv, Anthropic SDK |
+| **Caching** | Custom JSON Cache |
+| **Data** | Synthetic JSON datasets 
+
+### Compliance Frameworks
+- **Regional:** CFATF, Bank of Jamaica (BOJ), POCA Jamaica
+- **Global:** FATF 40 Recommendations, UN Sanctions, OFAC
 
 ---
 
 ## 📁 Project Structure
 
 ```
-aml-kyc-compliance-agent/
-├── agents/
-│   ├── orchestrator.py          # Audit orchestrator agent
-│   ├── screening_agent.py       # Transaction screening sub-agent
-│   └── kyc_verifier_agent.py    # KYC document verifier sub-agent
-├── tools/
-│   ├── sanctions_checker.py     # Sanctions list + PEP screening tool
-│   ├── risk_scorer.py           # Risk classification tool
-│   └── report_generator.py      # PDF/JSON audit report tool
-├── prompts/
-│   └── system_prompt.txt        # Compliance agent system prompt
-├── evals/
-│   ├── test_cases/              # Labelled SAR scenarios + clean cases
-│   └── run_evals.py             # Evaluation pipeline
-├── mcp_config/
-│   └── mcp.json                 # MCP server configuration
-├── config.py                    # Environment and threshold config
-├── requirements.txt
-└── README.md
+AML-KYC-Compliance-AI-Agent/
+├── agents/           # AI agent orchestration logic
+├── tools/            # Compliance screening tools
+├── utils/            # Caching and helper utilities
+├── data/             # Mock sanctions & PEP datasets
+├── prompts/          # LLM system prompts
+├── images/           # README screenshots
+├── app.py            # Streamlit UI entry point
+├── config.py         # Configuration management
+└── requirements.txt  # Python dependencies
+
 ```
 
 ---
@@ -195,16 +175,6 @@ Output ──► Compliance dashboard · SIEM · Case management system
 
 ---
 
-## ⚖️ Compliance Frameworks Supported
-
-- **FATF** — Financial Action Task Force 40 Recommendations
-- **FinCEN** — Financial Crimes Enforcement Network guidelines
-- **OFAC** — Office of Foreign Assets Control sanctions lists
-- **EU 6AMLD** — Sixth Anti-Money Laundering Directive
-- **Basel AML Index** — Risk country classification
-
----
-
 ## 🔒 Important Notes
 
 > **This agent is a decision-support tool.** All flagged cases should be reviewed by a qualified compliance officer before action is taken. The agent's reasoning traces are designed to assist — not replace — human judgement.
@@ -212,16 +182,6 @@ Output ──► Compliance dashboard · SIEM · Case management system
 - All agent decisions are logged with a full reasoning trace for regulatory audit purposes
 - Risk thresholds are configurable and should be calibrated to your institution's risk appetite
 - Ensure your data handling complies with applicable data protection regulations (e.g. GDPR) before processing customer data
-
----
-
-## 🗺️ Roadmap
-
-- [X] Real-time streaming transaction monitoring
-- [ ] Integration with SWIFT transaction messaging
-- [ ] Automated SAR (Suspicious Activity Report) filing draft generation
-- [ ] Fine-tuned risk scoring model on institution-specific historical data
-- [ ] Web dashboard for compliance officer case review
 
 ---
 
