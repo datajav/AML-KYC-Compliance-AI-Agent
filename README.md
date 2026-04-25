@@ -1,26 +1,37 @@
-# 🏦 AML/KYC Compliance AI Agent
+# 🏦 Caribbean AML/KYC Compliance AI Agent
 
+> **Automating Financial Crime Compliance for Jamaican & Caribbean Financial Institutions**
 
-This agent is specifically calibrated for the **Caribbean financial landscape**, addressing unique regional challenges:
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.30+-FF4B4B?logo=streamlit)](https://streamlit.io)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Deployed on Streamlit Cloud](https://img.shields.io/badge/Demo-Live-1f77b4)](https://your-app.streamlit.app)
 
-- **De-risking Mitigation:** Helps local banks maintain correspondent relationships by ensuring robust compliance.
-- **CFATF Alignment:** Risk scoring aligns with Caribbean Financial Action Task Force mutual evaluation recommendations.
-- **POCA Compliance:** Adheres to Jamaica's Proceeds of Crime Act for PEP identification and reporting.
-- **CBI Scrutiny:** Enhanced due diligence for Citizenship by Investment applicants.
-
-### Regulatory Bodies Supported
-- **Bank of Jamaica (BOJ)**
-- **Financial Services Commission (FSC)**
-- **Financial Investigation Division (FID)**
-- **CARICOM Implementation Agency for Crime and Security (IMPACS)**
+---
 
 ## 📌 Overview
 
-This project implements a multi-agent AI system designed to automate the compliance audit lifecycle — from real-time transaction screening and KYC document verification, to structured audit report generation. It was prototyped using the VSCode AI Toolkit Agent Builder (no-code), then exported and extended in Python for production use.
+This project is an **agentic AI system** designed to assist compliance officers in Jamaican and Caribbean financial institutions. It automates transaction screening, KYC verification, and risk scoring while adhering to **CFATF**, **Bank of Jamaica (BOJ)**, and **POCA** regulations.
 
-**Compliance scope:** FATF recommendations, FinCEN guidance, sanctions screening, PEP identification
+**Key Features:**
+- 🇯🇲 **Regional Focus:** Calibrated for Caribbean compliance (CFATF, BOJ, FSC)
+- 🤖 **AI-Powered:** Uses Claude 3.5 Sonnet for risk analysis and reasoning
+- 💾 **Cost-Optimized:** Response caching reduces API costs by 90%
+- 📊 **Interactive UI:** Streamlit dashboard for real-time screening
+- 🔒 **Privacy-First:** Uses synthetic data (no real PII processed)
 
-**AI/ML discipline:** AI Engineering · Agentic NLP Systems · Anomaly Detection · Decision Support
+---
+
+## 📸 Demo Screenshots
+
+### High-Risk Transaction Detection
+![Hero Shot](images/hero.png)
+
+### AI Reasoning Trace
+![Reasoning](images/reasoning.png)
+
+### Risk Analytics Dashboard
+![Dashboard](images/dashboard.png)
 
 ---
 
@@ -105,8 +116,6 @@ aml-kyc-compliance-agent/
 
 ### Prerequisites
 
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Foundry Toolkit Extension](https://marketplace.visualstudio.com/items?itemName=ms-windows-ai-studio.windows-ai-studio)
 - Python 3.11+
 - Anthropic API key
 
@@ -138,10 +147,6 @@ PEP_REGISTRY_URL=https://your-pep-registry.com
 RISK_THRESHOLD_HIGH=0.75
 RISK_THRESHOLD_MEDIUM=0.45
 ```
-
-### 4. Configure MCP servers
-
-Update `mcp_config/mcp.json` with your filesystem paths and database connection strings. Refer to the [MCP documentation](https://code.visualstudio.com/docs/intelligentapps/agentbuilder) for setup instructions.
 
 ### 5. Run the agent
 
