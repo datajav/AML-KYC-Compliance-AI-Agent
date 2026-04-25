@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     A[🖥️ Streamlit UI<br/>app.py] --> B[🤖 Compliance Orchestrator<br/>Claude 3.5 Sonnet]
     B --> C[🔍 Sanctions Checker<br/>BOJ · UN · OFAC]
