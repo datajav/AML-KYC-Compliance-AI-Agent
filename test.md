@@ -1,1 +1,14 @@
-┌─────────────────────────────────────────────────────┐ │ 🖥️ Streamlit UI (app.py) │ │ User Input & Dashboard │ └─────────────────────┬───────────────────────────────┘ │ ▼ ┌─────────────────────────────────────────────────────┐ │ 🤖 Compliance Orchestrator Agent │ │ (Claude 3.5 Sonnet) │ │ Coordinates all compliance tools │ └─────────────┬───────────────────┬───────────────────┘ │ │ ▼ ▼ ┌─────────────────┐ ┌─────────────────┐ │ 🔍 Sanctions │ │ 📊 Risk Scorer │ │ Checker │ │ (CFATF) │ │ │ │ │ │ • BOJ Lists │ │ • Jurisdiction │ │ • UN Sanctions │ │ • Business Type │ │ • OFAC (US) │ │ • PEP Status │ │ • Local Mock DB │ │ • Transaction │ └────────┬────────┘ └────────┬────────┘ │ │ └──────────┬──────────┘ ▼ ┌─────────────────────┐ │ 💾 Cache + Audit │ │ Trail Logger │ └──────────┬──────────┘ ▼ ┌─────────────────────┐ │ 📄 Final Report │ │ JSON / PDF Output │ └─────────────────────┘
+flowchart TD
+    A[🖥️ Streamlit UI<br/>app.py] --> B[🤖 Compliance Orchestrator<br/>Claude 3.5 Sonnet]
+    B --> C[🔍 Sanctions Checker<br/>BOJ · UN · OFAC]
+    B --> D[📊 Risk Scorer<br/>CFATF Logic]
+    C --> E[💾 Cache Layer]
+    D --> E
+    E --> F[📄 Audit Report<br/>JSON/PDF]
+    
+    style A fill:#1f77b4,stroke:#333,stroke-width:2px,color:#fff
+    style B fill:#ff7f0e,stroke:#333,stroke-width:2px,color:#fff
+    style C fill:#2ca02c,stroke:#333,stroke-width:2px,color:#fff
+    style D fill:#2ca02c,stroke:#333,stroke-width:2px,color:#fff
+    style E fill:#9467bd,stroke:#333,stroke-width:2px,color:#fff
+    style F fill:#1f77b4,stroke:#333,stroke-width:2px,color:#fff
