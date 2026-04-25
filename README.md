@@ -152,39 +152,6 @@ Evaluation metrics include:
 
 ---
 
-## 📊 Agent Workflow
-
-```
-Input (transactions / customer data)
-        │
-        ▼
-Screening Agent ──► Sanctions match · PEP flag · Pattern anomaly
-        │
-        ▼
-KYC Verifier Agent ──► Document validity · UBO map · Risk profile
-        │
-        ▼
-Audit Orchestrator ──► Aggregates findings · Assigns risk score
-        │
-        ▼
-Report Generator ──► Timestamped PDF/JSON audit report
-        │
-        ▼
-Output ──► Compliance dashboard · SIEM · Case management system
-```
-
----
-
-## 🔒 Important Notes
-
-> **This agent is a decision-support tool.** All flagged cases should be reviewed by a qualified compliance officer before action is taken. The agent's reasoning traces are designed to assist — not replace — human judgement.
-
-- All agent decisions are logged with a full reasoning trace for regulatory audit purposes
-- Risk thresholds are configurable and should be calibrated to your institution's risk appetite
-- Ensure your data handling complies with applicable data protection regulations (e.g. GDPR) before processing customer data
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome. Please open an issue first to discuss proposed changes. Ensure all new tools include evaluation test cases.
