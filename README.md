@@ -166,4 +166,4 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 ## 🙏 Acknowledgements
 
-Built with [VSCode Foundry Toolkit](https://code.visualstudio.com/docs/intelligentapps/overview) · Powered by [Claude](https://www.anthropic.com/claude) by Anthropic
+Powered by [Claude](https://www.anthropic.com/claude) by Anthropic
