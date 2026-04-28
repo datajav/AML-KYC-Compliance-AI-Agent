@@ -27,8 +27,8 @@ This project is an **agentic AI system** designed to assist compliance officers 
 ### High-Risk Transaction Detection
 ![Hero Shot](images/hero.png)
 
-### AI Reasoning Trace
-![Reasoning](images/reasoning.png)
+### Final Report Sample
+![Sample Report](images/report.png)
 
 ### Risk Analytics Dashboard
 ![Dashboard](images/dashboard.png)
